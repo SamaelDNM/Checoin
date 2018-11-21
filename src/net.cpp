@@ -1206,14 +1206,13 @@ void ThreadDNSAddressSeed()
 }
 
 
-
-
-
-
-
-
-
-
+// DNS seeds
+// Each pair gives a source name and a seed name.
+// The first name is used as information source for addrman.
+// The second name should resolve to a list of seed addresses.
+// I add nodes found, possibly the first one is https://coinexchange.io
+static const char *strDNSSeed[][2] = {
+    {"144.76.237.39", "190.200.165.153"},
 
 
 void DumpAddresses()
